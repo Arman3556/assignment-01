@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beginner Friendly Web Page - HTML & CSS</title>
+  <style>
+    /* ---------- Global styles ---------- */
+    :root{
+      --primary:#2b7a78; /* teal */
+      --accent:#f4a261;  /* soft orange */
+      --muted:#6b7280;   /* gray */
+      --bg:#f7fafc;      /* very light */
+      --card:#ffffff;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing: border-box}
+    body{margin:0; background:var(--bg); color:#111; line-height:1.5}
+
+    .container{max-width:1000px; margin:0 auto; padding:24px}
+
+    /* ---------- 1) NAVBAR ---------- */
+    /* Simple horizontal navigation with a brand on the left and links on the right */
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit}
+    .brand .logo{width:40px; height:40px; display:inline-grid; place-items:center; background:var(--primary); color:#fff; border-radius:8px; font-weight:700}
+    .nav-links{display:flex; gap:14px; list-style:none; margin:0; padding:0}
+    .nav-links a{ text-decoration:none; color:var(--muted); padding:6px 10px; border-radius:6px }
+    .nav-links a:hover{color:var(--primary); background:rgba(43,122,120,0.06)}
+
+    /* ---------- 2) HERO / BANNER ---------- */
+    /* A prominent header section with a headline, text and a call-to-action button */
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; align-items:center; margin-top:22px; padding:28px; background:linear-gradient(180deg, #ffffff 0%, #f1fbfa 100%); border-radius:12px}
+    .hero h1{margin:0; font-size:clamp(20px, 3.4vw, 32px)}
+    .hero p{margin:0; color:var(--muted)}
+    .cta{display:inline-block; margin-top:12px; background:var(--primary); color:white; padding:10px 16px; border-radius:8px; text-decoration:none}
+
+    /* ---------- 3) FEATURES / CARDS ---------- */
+    /* Small cards that explain core parts of the page or project */
+    .features{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-top:18px}
+    .card{background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(12,12,12,0.04)}
+    .card h3{margin:0 0 8px 0}
+    .card p{margin:0; color:var(--muted); font-size:0.95rem}
+
+    /* ---------- 4) CONTENT / ABOUT ---------- */
+    /* Simple two-column responsive content area with an image placeholder */
+    .about{display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; align-items:center}
+    .about .text{padding:12px}
+    .about img{width:100%; border-radius:10px}
+    @media(min-width:800px){
+      .about{grid-template-columns:1fr 1fr}
+    }
+
+    /* ---------- 5) FOOTER ---------- */
+    /* Minimal footer with centered text and links */
+    footer{margin-top:22px; padding:18px 0; text-align:center; color:var(--muted)}
+    footer a{color:var(--primary); text-decoration:none}
+
+    /* Small utility classes used in multiple places */
+    .muted{color:var(--muted)}
+    .small{font-size:0.9rem}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ---------- 1) NAVBAR ----------
+         - Creates a navigation bar at the top.
+         - Uses a brand area with a small logo box and the site name.
+         - Right side contains simple navigation links.
+         - Class names: .nav, .brand, .logo, .nav-links
+    -->
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#">
+        <span class="logo">B</span>
+        <span class="site-name">BeginnerSite</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ---------- 2) HERO / BANNER ----------
+         - A welcoming banner with a headline and call-to-action.
+         - Class names: .hero, .cta
+    -->
+    <header id="home" class="hero">
+      <div>
+        <h1>Learn to build web pages with simple HTML &amp; CSS</h1>
+        <p>Step-by-step examples, clear class names and comments so you always know what each part does.</p>
+        <a class="cta" href="#features">Get started</a>
+      </div>
+    </header>
+
+    <!-- ---------- 3) FEATURES / CARDS ----------
+         - Three short cards that show basic features of the page.
+         - Good place for beginners to see how repeating components look.
+         - Class names: .features, .card
+    -->
+    <section id="features" class="features" aria-label="Features">
+      <article class="card">
+        <h3>Clean structure</h3>
+        <p>We separate the page into clear sections (nav, hero, features, about, footer) so it's easy to follow.</p>
+      </article>
+
+      <article class="card">
+        <h3>Semantic HTML</h3>
+        <p>Using elements like &lt;nav&gt;, &lt;header&gt;, &lt;section&gt;, &lt;article&gt; and &lt;footer&gt; improves accessibility.</p>
+      </article>
+
+      <article class="card">
+        <h3>Responsive layout</h3>
+        <p>The page uses simple CSS grid rules so it adapts to small screens and larger screens automatically.</p>
+      </article>
+    </section>
+
+    <!-- ---------- 4) CONTENT / ABOUT ----------
+         - Two-column section: image on one side and text on the other for the about content.
+         - Stays single column on small screens and becomes two columns on wider screens.
+         - Class names: .about, .text
+    -->
+    <section id="about" class="about">
+      <div class="text">
+        <h2>About this example</h2>
+        <p class="muted">This minimal page is designed for beginners. All styles are inside the same file to keep things simple — later you can move CSS into its own file (styles.css).</p>
+        <p class="small">Try editing the headline, change colors in the <code>:root</code> variables, or add another card to the features list to practice.</p>
+      </div>
+      <!-- placeholder image using an inline SVG so no external files are needed -->
+      <div>
+        <img alt="illustration placeholder" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360"><rect width="100%" height="100%" fill="%23e6fffd"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="%236b7280">Placeholder Image — edit or replace with your own</text></svg>' />
+      </div>
+    </section>
+
+    <!-- ---------- 5) FOOTER ----------
+         - Minimal centered footer with a copyright and a small nav link.
+         - Class names: footer
+    -->
+    <footer>
+      <p>&copy; <span id="year"></span> BeginnerSite — made with ❤️ for learning.</p>
+      <p class="small">Want to experiment? Open this file in VS Code and edit any text or color variables, then refresh the browser.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Small script to keep the year up-to-date. This is optional and safe for beginners.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

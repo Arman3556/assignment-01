@@ -1,15 +1,87 @@
 /* Nav Bar Styles */
 
-nav ul{
+.header{
+    width: 100%;
     max-width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-family: fira sans;
 
 }
 
-li{
-    list-style: none;
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(14, 14, 14, 1);
+}
+.nav-btn{
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 106, 80, 1);
+    gap: 48px;
+}
+
+/* Banner Styles */
+
+.banner{
+    display: flex;
+    max-width: 1280px;
+    justify-content: space-between;
+    padding: 80px 100px 80px 100px;
+}
+
+.banner-content{
+    max-width: 622px;
+}
+
+.banner-title{
+    color: rgba(14, 14, 14, 0.5);
+    font-size: 24px;
+}
+
+.banner-hero-image{
+    width: 474px;
+}
+
+
+/* Vision Styles */
+
+.card-1{
+    background-color:rgba(84, 144, 245, 0.2);
+}
+.card-2{
+    background-color: rgba(198, 228, 214, 1);  
+}
+.card-3{
+    background-color: rgba(247, 235, 207, 1);
+}
+
+.cbtn-1{
+    background-color: rgba(84, 144, 245, 1);
+}
+.cbtn-2{
+    background-color: rgba(9, 161, 92, 1);
+}
+.cbtn-3{
+    background-color: rgba(255, 194, 57, 1);
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 600; 
+}
+
+.card-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(14, 14, 14, 0.7);
+}
+
+.card-title .card-description .card-icon{
+    margin: 24px, 24px, 64px, 24px;
 }
