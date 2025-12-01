@@ -15,8 +15,6 @@
 }
 
 
-/*Shared Button Styles */
-
 .btn-primary{
   background-color: rgba(0, 106, 80, 1);
   color: rgba(255, 255, 255, 1);
@@ -36,26 +34,31 @@
   font-size: 40px;
   font-weight: 600;
   color: rgba(14, 14, 14, 1);
+  margin-top: 80px;
+  margin-bottom: 24px;
 }
 
 .section-description{
   font-size: 16px;
   font-weight: 400;
   color: rgba(14, 14, 14, 0.7);
+  margin-bottom: 32px;
+  line-height: 24px;
+}
 
+.section-title, .section-description {
+gap: 24px;
 }
 
 
 .cards{
   display: flex;
   gap: 24px;
-
 }
 
 .card-content{
   padding: 24px;
   border-radius: 16px;
-
 }
 
 .card-btn{
@@ -66,4 +69,16 @@
   border-radius: 8px;
   color: rgba(255, 255, 255, 1);
   margin-top: 24px;
+}
+
+
+.quote{
+  background-color: #FFFFFF;
+  border: 20px;
+  
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 14, 0.15);
+  margin-top: 32px;
+  /* padding: 48px 24px 48px 24px; */
+
 }
