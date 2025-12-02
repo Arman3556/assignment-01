@@ -193,7 +193,7 @@
 /* Donation Styles */
 
 .donation{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -235,11 +235,60 @@
 
 .done-btn{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: rgba(0, 106, 80, 1);  
     color: rgba(255, 255, 255, 1);
     border-radius: 8px;
     border: none;
     padding: 17px 34px;
     gap: 48px;
+}
+
+
+/* Footer Styles */
+
+.footer{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subscribe-content{
+    background-color: rgba(198, 228, 214, 1);
+    border-radius: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.sub-title{
+    margin-bottom: 16px;
+}  
+
+.email-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 24px;  
+}
+
+.email-card{
+    width: 600px;
+    height: 39px;
+    border: none;
+    padding: 8px 20px 8px 40px; 
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.sub-btn{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(0, 106, 80, 1);  
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    border: none;
+    padding: 17px 34px;
+    gap: 48px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
