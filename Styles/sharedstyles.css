@@ -50,7 +50,6 @@
 gap: 24px;
 }
 
-
 .cards{
   display: flex;
   gap: 24px;
@@ -72,13 +71,11 @@ gap: 24px;
 }
 
 
-.quote{
-  background-color: #FFFFFF;
-  border: 20px;
-  
-  border-radius: 16px;
-  box-shadow: rgba(14, 14, 14, 0.15);
-  margin-top: 32px;
-  /* padding: 48px 24px 48px 24px; */
-
+.btn-secondary{
+    background-color: rgba(0, 106, 80, 1);  
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    border: none;
+    padding: 13px 26px;
+    gap: 48px;
 }

@@ -88,6 +88,19 @@
 
 /* Quote Section */
 
+.quote{
+  background-color: whitesmoke;
+  border: 20px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 14, 0.15);
+  margin-top: 32px;
+}
+
+.quote-contents{
+    padding: 10px 24px 14px 24px;
+}
+
+
 .main-quote{
     background-image: url(../assets/quote-bg.png);
     background-repeat: no-repeat;
@@ -97,9 +110,8 @@
 .main-quote-x{
     font-size: 16px;
     font-weight: 400;
-    margin-top: 48px;
     color: rgba(14, 14, 14, 0.8);
-    padding-top: 28px;
+    padding-top: 30px;
 }
 
 .quote-person{
@@ -109,7 +121,66 @@
 
 .person-id{
     margin-top: 4px;
+    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(14, 14, 14, 0.6);
+}
+
+
+/* Recent News Styles */
+
+.recent-news-content{
+    margin-top: 30px;
+}
+
+.news-title{
+    margin-bottom: 24px;
+}
+
+.news-subtitle{
+    margin-bottom: 32px;
+}
+
+.news-card-1{
+    display: flex;
+    gap: 32px;
+}
+
+.news-card-2{
+    display: flex;
+    gap: 32px;
+}
+
+.news-card-1, .news-card-2{
+    background-color: whitesmoke;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    padding: 40px 38px;
+}
+
+.news-card-title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: rgba(14, 14, 14, 0.8);
+}
+
+.satellite{
+    border-radius: 24px;
+    margin-top: 20px;
+}
+
+.common-font{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(14, 14, 14, 0.7);
+}
+
+.read-more{
+    margin-top: 30px;
+}
+
+.news-desc{
+    margin-top: 6px;
 }
